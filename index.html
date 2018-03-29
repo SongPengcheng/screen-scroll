@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="Generator" content="EditPlus®">
+  <meta name="Author" content="">
+  <meta name="Keywords" content="">
+  <meta name="Description" content="">
+  <title>Document</title>
+  <style>
+	  #main{
+		overflow-x:hidden;overflow-y:hidden;width:100%;position:absolute;
+	  }
+  </style>
+ </head>
+ <body>
+ <div id="wrap">  
+	<div id="main">  
+		<div id="page1" class="page" style="background-color:red"></div>  
+		<div id="page2" class="page" style="background-color:blue"></div>  
+		<div id="page3" class="page" style="background-color:yellow"></div>  
+		<div id="page4" class="page" style="background-color:green"></div>  
+	</div>      
+</div>  
+<script src="jquery.min.js"></script>
+<script src="screen.scroll.js"></script>
+ <script type="text/javascript">
+	(function(){
+		var navHeight = $(window).height();
+		$(".page").height(navHeight);
+	})();
+ </script>
+ </body>
+ 
+</html>
